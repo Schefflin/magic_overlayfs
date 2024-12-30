@@ -16,10 +16,10 @@ cp -af README.md out/magisk-module
 mkdir -p out/magisk-module/libs
 
 ( cat << EOF
-arm64-v8a aarch64-linux-android31-clang++
-armeabi-v7a armv7a-linux-androideabi31-clang++
-x86 i686-linux-android31-clang++
-x86_64 x86_64-linux-android31-clang++
+arm64-v8a aarch64-linux-android35-clang++
+armeabi-v7a armv7a-linux-androideabi35-clang++
+x86 i686-linux-android35-clang++
+x86_64 x86_64-linux-android35-clang++
 EOF
 ) | while read line; do
     ARCH="$(echo $line | awk '{ print $1 }')"
